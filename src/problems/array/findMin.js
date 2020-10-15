@@ -22,10 +22,13 @@ public class KadaneAlgo {
             }
 
         }
-
-        System.out.println(overallStart + " --> " + end);
-        System.out.println(array[overallStart] + " --> " + array[end]);
         return maxSum;
     }
 }
 `;
+
+export const findMinTestCases = [
+  { id: 1, testCase: "case1", solution: "sol 1" },
+  { id: 2, testCase: "case 2", solution: "sol 3" },
+  { id: 3, testCase: "case 3", solution: " sol 3" },
+];

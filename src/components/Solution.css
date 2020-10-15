@@ -1,0 +1,30 @@
+.solution-w {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.solution-code-w {
+  padding: 10px;
+  overflow-x: scroll;
+  background-color: #fff;
+}
+
+.solution-w .test-case-w {
+  margin-top: 10px;
+}
+
+.solution-w .test-case-w > div {
+  margin: 10px 0;
+}
+.solution-w .test-case-w .single-test-case {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.solution-w .test-case-w strong {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

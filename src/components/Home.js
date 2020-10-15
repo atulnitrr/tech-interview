@@ -1,18 +1,20 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import allProblems from "../data";
+import "./Home.css";
 
 function Home(props) {
   return (
-    <div>
-      <h3>Home js</h3>
+    <div className="home-w">
       {allProblems.map((problem) => {
-        const { id, title } = problem;
+        const { id, title, type } = problem;
         return (
           <div key={id}>
-            <Link to={`/${id}`} target="_blank">
-              {title}
-            </Link>
+            <>
+              <Link to={`/${id}`} target="_blank">
+                {title} <em>({type})</em>
+              </Link>
+            </>
           </div>
         );
       })}

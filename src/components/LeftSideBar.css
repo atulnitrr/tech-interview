@@ -1,0 +1,18 @@
+.app-leftsidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-leftsidebar .app-lsb-navlinks-w {
+  height: 95%;
+  overflow: scroll;
+}
+
+.app-leftsidebar footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

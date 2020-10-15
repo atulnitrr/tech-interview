@@ -1,0 +1,40 @@
+.app-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 10px;
+}
+
+.app-header > * {
+  flex: 1 1 0;
+}
+
+.search-container {
+  flex: 1.5 1 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search-container form {
+  width: 100%;
+  display: flex;
+}
+
+.search-container form input {
+  flex: 5 1 0;
+  padding: 4px 6px;
+  border: 0.1px solid black;
+}
+
+.search-container form button {
+  flex: 1 1 0;
+  border: 0.1px solid black;
+  border-left: none;
+}
+
+.app-header .pf-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+}

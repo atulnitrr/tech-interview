@@ -1,0 +1,23 @@
+.home-w {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.home-w div {
+  margin: 1px 0;
+  padding: 1px 0;
+  cursor: pointer;
+}
+
+.home-w div:hover {
+  background-color: var(--background-primary-btn);
+}
+
+.home-w div:hover a {
+  color: #fff;
+}
+
+.home-w div a {
+  text-decoration: none;
+}

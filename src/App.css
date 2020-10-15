@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  --background-tertiary: #202225;
+  --background-secondary: #2f3136;
+  --background-primary: #36393f;
+  --header-primary: #fff;
+  --text-normal: #dcddde;
+  --text-primary: #fff;
+  --text-user-prmary: #e67e22;
+  --background-logout: #e74c3c;
+  --background-primary-btn: #43b581;
+  --primary-success: #43a047;
+  --secondary-success: #43b581;
+  --background-main: #e9e9e9;
+  --background-leftsidebar: #f9f9f9;
+}
+
+.app-container {
+  background-color: var(--background-primary);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 50px minmax(500px, 1fr);
+  grid-template-columns: minmax(300px, 400px) 1fr minmax(300px, 400px);
+  /* gap: 2.5px; */
+  grid-template-areas:
+    "appheader appheader appheader"
+    "appleft  appmain appright ";
+}
+
+/* you can leave . to leave the area */
+
+.app-container > * {
+  background: #fff;
+}
+
+.app-header {
+  grid-area: appheader;
+}
+
+.app-leftsidebar {
+  grid-area: appleft;
+  background-color: var(--background-leftsidebar);
+}
+
+.app-main {
+  grid-area: appmain;
+  background-color: var(--background-main);
+}
+
+.app-rightsidebar {
+  grid-area: appright;
+  background-color: var(--background-leftsidebar);
+}
+
+code {
+  font-size: 18px;
+}
