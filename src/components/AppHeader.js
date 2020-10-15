@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import "./AppHeader.css";
 
@@ -8,6 +9,13 @@ function AppHeader({ setSearchTerm }) {
     e.preventDefault();
     setSearchTerm(localInput);
   };
+
+  useEffect(() => {
+    if (localInput === undefined || localInput.trim().length === 0) {
+      setSearchTerm("");
+    }
+    // eslint-disable-next-line
+  }, [localInput]);
   return (
     <header className="app-header">
       <div>Tech Interview</div>

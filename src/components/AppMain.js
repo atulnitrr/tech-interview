@@ -2,7 +2,7 @@ import React from "react";
 
 function AppMain({ children }) {
   return (
-    <div>
+    <div className="app-main">
       <main className="app-main">{children}</main>
     </div>
   );

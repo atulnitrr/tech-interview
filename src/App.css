@@ -19,11 +19,11 @@
 }
 
 .app-container {
-  background-color: var(--background-primary);
+  /* background-color: var(--background-primary); */
   min-height: 100vh;
   display: grid;
   grid-template-rows: 50px minmax(500px, 1fr);
-  grid-template-columns: minmax(300px, 400px) 1fr minmax(300px, 400px);
+  grid-template-columns: 300px 1fr minmax(300px, 400px);
   /* gap: 2.5px; */
   grid-template-areas:
     "appheader appheader appheader"
@@ -48,6 +48,7 @@
 .app-main {
   grid-area: appmain;
   background-color: var(--background-main);
+  /* overflow: scroll; */
 }
 
 .app-rightsidebar {

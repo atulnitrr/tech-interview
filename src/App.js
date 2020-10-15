@@ -10,18 +10,28 @@ import LeftSideBar from "./components/LeftSideBar";
 import RightSideBar from "./components/RightSideBar";
 import Solution from "./components/Solution";
 
+// https://ui.dev/react-router-v4-pass-props-to-components/
+
 function App() {
-  const [serarchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <BrowserRouter>
       <div className="app-container">
         <AppHeader setSearchTerm={setSearchTerm}></AppHeader>
         <LeftSideBar></LeftSideBar>
-        <AppMain serarchTerm={serarchTerm}>
+        <AppMain searchTerm={searchTerm}>
           <Switch>
-            <Route path="/ds-algo" component={Home} exact></Route>
+            <Route
+              path="/ds-algo"
+              render={(props) => <Home {...props} searchTerm={searchTerm} />}
+              exact
+            ></Route>
             <Route path="/:problemid" component={Solution} exact></Route>
-            <Route path="/" component={Home}></Route>
+            <Route
+              path="/"
+              render={(props) => <Home {...props} searchTerm={searchTerm} />}
+            ></Route>
           </Switch>
         </AppMain>
         <RightSideBar></RightSideBar>
@@ -31,10 +41,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Switch>
-<Route path="/:problemid" component={Solution} exact></Route>
-<Route path="/" component={Home}></Route>
-</Switch> */
-}

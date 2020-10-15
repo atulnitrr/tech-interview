@@ -1,12 +1,38 @@
-.app-leftsidebar {
+.app-container .app-leftsidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 95vh;
+  overflow: scroll;
+  position: fixed;
+  z-index: 2000;
+  width: 300px;
+  top: 50px;
 }
 
 .app-leftsidebar .app-lsb-navlinks-w {
   height: 95%;
   overflow: scroll;
+  padding-left: 25px;
+}
+
+.app-leftsidebar .app-lsb-navlinks-w div {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.app-leftsidebar .app-lsb-navlinks-w div:hover {
+  background-color: var(--background-primary-btn);
+}
+
+.app-leftsidebar .app-lsb-navlinks-w div:hover a {
+  color: #fff;
+}
+
+.app-leftsidebar .app-lsb-navlinks-w div a {
+  text-decoration: none;
+  font-size: 21px;
+  padding: 10px;
 }
 
 .app-leftsidebar footer {

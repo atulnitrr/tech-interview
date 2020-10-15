@@ -31,7 +31,7 @@ const allProblems = [
     testcases: Sum_3TestCases,
   },
   {
-    id: 3,
+    id: 4,
     type: "dp",
     title: "first dp problem",
     problem: Sum_3P,

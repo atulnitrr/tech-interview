@@ -10,7 +10,7 @@ function LeftSideBar() {
           <Link to="/ds-algo">Ds&Algo</Link>
         </div>
         <div>
-          <Link>System designs</Link>
+          <Link to="/to">System designs</Link>
         </div>
       </div>
       <footer>&copy; Atul 2019-2020 </footer>
